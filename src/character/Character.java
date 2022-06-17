@@ -1,5 +1,7 @@
 package character;
 
+import monster.Monster;
+
 //スーパークラス
 public class Character {
 	
@@ -22,6 +24,11 @@ public class Character {
 	public int defencePower;
 
 	//インスタンスメソッド
+	public void attack(Monster monster) {
+		int damage = this.attackPower - monster.defencePower;
+		if (damage > 0) monster.hp -= damage;
+	}
+
 	public void greet(String message) {
 		System.out.println(message);
 	}

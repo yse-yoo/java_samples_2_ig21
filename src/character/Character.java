@@ -24,9 +24,10 @@ public class Character {
 	public int defencePower;
 
 	//インスタンスメソッド
-	public void attack(Monster monster) {
+	public int attack(Monster monster) {
 		int damage = this.attackPower - monster.defencePower;
 		if (damage > 0) monster.hp -= damage;
+		return damage;
 	}
 
 	public void greet(String message) {

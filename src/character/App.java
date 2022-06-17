@@ -15,13 +15,13 @@ public class App {
 		
 		//ボブがモンスターに攻撃する
 		Monster monster = new Monster();
-		warrior.attack(monster);
-//		wizard.attack(monster);
+//		int damage = warrior.attack(monster);
+		int damage = wizard.attack(monster);
 		
 		//モンスターが生きているか？確認
 		System.out.println(monster.hp);
 		if (monster.isAlive()) {
-			System.out.println(monster.name + "は生きている");
+			System.out.println(monster.name + "に" + damage + "のダメージ！");
 		} else {
 			System.out.println(monster.name + "を倒した！");
 		}

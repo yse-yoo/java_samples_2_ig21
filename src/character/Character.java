@@ -2,6 +2,13 @@ package character;
 
 //スーパークラス
 public class Character {
+	
+	//コンストラクタ
+	public Character(String name) {
+		super();
+		this.name = name;
+	}
+
 	//フィールド（プロパティ）
 	public String name;
 	public String job;

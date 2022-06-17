@@ -1,5 +1,6 @@
 package character;
 
+//スーパークラス
 public class Character {
 	//フィールド（プロパティ）
 	public String name;
@@ -19,4 +20,5 @@ public class Character {
 	public void showStatus() {
 		System.out.println("Name: " + this.name);
 	}
+
 }

@@ -27,7 +27,16 @@ public class Character {
 	}
 	
 	public void showStatus() {
+		System.out.println("---- Status ----");
 		System.out.println("Name: " + this.name);
+		System.out.println("Job: " + this.job);
+		System.out.println("HP: " + this.hp);
+		System.out.println("MP: " + this.mp);
+		System.out.println("Lv: " + this.level);
+		System.out.println("Exp: " + this.exp);
+		System.out.println("Attack: " + this.attackPower);
+		System.out.println("Defenece: " + this.defencePower);
+		System.out.println("--------");
 	}
 
 }

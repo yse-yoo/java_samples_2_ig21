@@ -1,11 +1,16 @@
 package zoo;
 
+//スーパークラス
 public class Animal {
+	
+	public Animal(String name) {
+		super();
+		this.name = name;
+	}
 
 	public String type;
 	public String name;
 	public String crying;
-	
 
 	public void walk() {
 		System.out.println(this.name + "が歩いた");

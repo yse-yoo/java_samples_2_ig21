@@ -8,5 +8,16 @@ public class Monster {
 	public int attackPower;
 	public int defencePower;
 
+	//コンストラクタ
+	public Monster() {
+		this.name = "ゴースト";
+		this.hp = 5;
+		this.mp = 0;
+		this.attackPower = 2;
+		this.defencePower = 1;
+	}
 	
+	public boolean isAlive() {
+		return (this.hp > 0);
+	}
 }

@@ -9,4 +9,7 @@ public class Dog extends Animal {
 		this.crying = "わん！";
 	}
 
+	public void actionCollective() {
+		System.out.println("集団行動");
+	}
 }

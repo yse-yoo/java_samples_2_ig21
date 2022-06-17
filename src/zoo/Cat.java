@@ -9,4 +9,7 @@ public class Cat extends Animal {
 		this.crying = "にゃー！";
 	}
 
+	public void actionSolo() {
+		System.out.println("単独行動");
+	}
 }

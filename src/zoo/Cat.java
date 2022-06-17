@@ -6,6 +6,7 @@ public class Cat extends Animal {
 	//コンストラクタ
 	public Cat(String name) {
 		super(name);
+		this.crying = "にゃー！";
 	}
 
 }

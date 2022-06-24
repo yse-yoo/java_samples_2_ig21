@@ -8,6 +8,7 @@ public class App2 {
 		// ArrayList
 		ArrayList<Character> characterList = new ArrayList<>();
 		
+		// CRUD
 		// Create: add()
 		characterList.add(new Wizard("アリス"));
 		characterList.add(new Wizard("テリー"));
@@ -22,7 +23,12 @@ public class App2 {
 		//データの個数 size()
 		int dataCount = characterList.size();
 		System.out.println(dataCount);
+		
+		// Read：データをインデックスで取得 get()
+		Character selectCharacter = characterList.get(1);
+		System.out.println(selectCharacter.name);
 
+		
 	}
 
 }

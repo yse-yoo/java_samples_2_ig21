@@ -12,6 +12,12 @@ public class App {
 		cat.walk();
 		cat.cry();
 		cat.actionSolo();
+		
+		Dog dog1 = new Dog("タロー");
+		Dog dog2 = new Dog("ジョン");
+		Cat cat1 = new Cat("ミケ");
+		Cat cat2 = new Cat("キャサリン");
+		// 動物をまとめて walk() させる
 	}
 
 }

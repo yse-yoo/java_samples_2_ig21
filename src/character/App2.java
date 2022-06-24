@@ -29,6 +29,13 @@ public class App2 {
 		System.out.println(selectCharacter.name);
 
 		
+		// Update: データをインデックスで指定して更新 set()
+		characterList.set(0, new Warrior("スミス"));
+		for (Character character : characterList) {
+			System.out.println(character.name);
+			System.out.println(character.job);
+		}	
+		
 	}
 
 }

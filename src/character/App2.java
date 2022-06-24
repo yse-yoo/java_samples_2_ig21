@@ -40,6 +40,15 @@ public class App2 {
 			System.out.println(character.job);
 		}	
 		
+		// Delete(Destroy): 指定したインデックスで削除 remove()
+		int lastIndex = dataCount - 1;
+		characterList.remove(lastIndex);
+		System.out.println("--- remove() ---");
+		for (Character character : characterList) {
+			System.out.println(character.name);
+			System.out.println(character.job);
+		}	
+
 	}
 	
 	public static void showData(ArrayList<Character> characterList) {

@@ -15,6 +15,7 @@ public class App2 {
 		characterList.add(new Warrior("ボブ"));
 		
 		// Read
+		System.out.println("--- list ---");
 		for (Character character : characterList) {
 			System.out.println(character.name);
 			System.out.println(character.job);
@@ -22,6 +23,7 @@ public class App2 {
 
 		//データの個数 size()
 		int dataCount = characterList.size();
+		System.out.println("--- size() ---");
 		System.out.println(dataCount);
 		
 		// Read：データをインデックスで取得 get()
@@ -31,11 +33,20 @@ public class App2 {
 		
 		// Update: データをインデックスで指定して更新 set()
 		characterList.set(0, new Warrior("スミス"));
+		System.out.println("--- set() ---");
+//		showData(characterList);
 		for (Character character : characterList) {
 			System.out.println(character.name);
 			System.out.println(character.job);
 		}	
 		
+	}
+	
+	public static void showData(ArrayList<Character> characterList) {
+		for (Character character : characterList) {
+			System.out.println(character.name);
+			System.out.println(character.job);
+		}	
 	}
 
 }

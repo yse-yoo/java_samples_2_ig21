@@ -17,7 +17,13 @@ public class App {
 		Dog dog2 = new Dog("ジョン");
 		Cat cat1 = new Cat("ミケ");
 		Cat cat2 = new Cat("キャサリン");
+		
 		// 動物をまとめて walk() させる
+		Animal[] animals = { dog1, dog2, cat1, cat2 };
+		for (Animal animal : animals) {
+			animal.walk();
+		}
+		
 	}
 
 }

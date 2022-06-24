@@ -15,8 +15,8 @@ public class App {
 		
 		//ボブがモンスターに攻撃する
 		Monster monster = new Monster();
-//		int damage = warrior.attack(monster);
-		int damage = wizard.attack(monster);
+		int damage = warrior.attack(monster);
+//		int damage = wizard.attack(monster);
 		
 		//モンスターが生きているか？確認
 		System.out.println(monster.hp);

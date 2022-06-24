@@ -49,6 +49,10 @@ public class App2 {
 			System.out.println(character.job);
 		}	
 
+		// Delete: すべて削除
+		characterList.clear();
+		System.out.println(characterList.size());
+		
 	}
 	
 	public static void showData(ArrayList<Character> characterList) {

@@ -13,6 +13,10 @@ public class App2 {
 		characterList.add(new Wizard("テリー"));
 		characterList.add(new Warrior("ボブ"));
 		
+		for (Character character : characterList) {
+			System.out.println(character.name);
+			System.out.println(character.job);
+		}
 	}
 
 }

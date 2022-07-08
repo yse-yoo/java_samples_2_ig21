@@ -7,4 +7,5 @@ public class PrimeUser extends UserBean {
 	public void showEmail() {
 		System.out.println(email);
 	}
+
 }

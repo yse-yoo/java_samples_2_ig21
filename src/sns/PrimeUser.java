@@ -1,5 +1,10 @@
 package sns;
 
-public class PrimeUser {
+import sns.entity.UserBean;
 
+public class PrimeUser extends UserBean {
+
+	public void showEmail() {
+		System.out.println(email);
+	}
 }

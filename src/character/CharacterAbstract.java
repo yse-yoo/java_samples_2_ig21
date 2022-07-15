@@ -9,4 +9,5 @@ public abstract class CharacterAbstract {
 	
 	public abstract boolean isAlive();
 
+	public abstract void magic(Monster monster, String key);
 }

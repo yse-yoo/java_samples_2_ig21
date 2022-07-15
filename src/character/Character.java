@@ -1,5 +1,6 @@
 package character;
 
+import item.Item;
 import monster.Monster;
 
 //スーパークラス
@@ -56,6 +57,12 @@ public class Character implements ICharacter{
 	@Override
 	public void magic(Monster monster, String key) {
 		
+	}
+
+	@Override
+	public void equip(Item item) {
+		this.attackPower += item.getAttackPower();
+		this.defencePower += item.getDefencePower();
 	}
 
 }

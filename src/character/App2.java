@@ -17,8 +17,8 @@ public class App2 {
 		// Read
 		System.out.println("--- list ---");
 		for (Character character : characterList) {
-			System.out.println(character.name);
-			System.out.println(character.job);
+			System.out.println(character.getName());
+			System.out.println(character.getJob());
 		}
 
 		//データの個数 size()
@@ -28,7 +28,7 @@ public class App2 {
 		
 		// Read：データをインデックスで取得 get()
 		Character selectCharacter = characterList.get(1);
-		System.out.println(selectCharacter.name);
+		System.out.println(selectCharacter.getName());
 
 		
 		// Update: データをインデックスで指定して更新 set()
@@ -36,8 +36,8 @@ public class App2 {
 		System.out.println("--- set() ---");
 //		showData(characterList);
 		for (Character character : characterList) {
-			System.out.println(character.name);
-			System.out.println(character.job);
+			System.out.println(character.getName());
+			System.out.println(character.getJob());
 		}	
 		
 		// Delete(Destroy): 指定したインデックスで削除 remove()
@@ -45,8 +45,8 @@ public class App2 {
 		characterList.remove(lastIndex);
 		System.out.println("--- remove() ---");
 		for (Character character : characterList) {
-			System.out.println(character.name);
-			System.out.println(character.job);
+			System.out.println(character.getName());
+			System.out.println(character.getJob());
 		}	
 
 		// Delete: すべて削除
@@ -57,8 +57,8 @@ public class App2 {
 	
 	public static void showData(ArrayList<Character> characterList) {
 		for (Character character : characterList) {
-			System.out.println(character.name);
-			System.out.println(character.job);
+			System.out.println(character.getName());
+			System.out.println(character.getJob());
 		}	
 	}
 

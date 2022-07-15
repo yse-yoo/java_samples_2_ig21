@@ -9,11 +9,11 @@ public class Warrior extends Character {
 	//コンストラクタ
 	public Warrior(String name) {
 		super(name);
-		this.job = "warrior";
-		this.hp = 30;
-		this.mp = 0;
-		this.attackPower = 10;
-		this.defencePower = 5;
+		setJob("warrior");
+		setHp(30);
+		setMp(0);
+		setAttackPower(10);
+		setDefencePower(5);
 	}
 
 	//オーバーライド（上書き）
@@ -22,20 +22,20 @@ public class Warrior extends Character {
 		System.out.println("オーバーライド");
 		
 		// 元の攻撃力を保存
-		int attackPower = this.attackPower;
+		int attackPower = getAttackPower();
 
 		// 1/5 の確率で攻撃力を２倍
 		Random rand = new Random();
 		int randomIndex = rand.nextInt(5);
 		if (randomIndex == 0) {
-			this.attackPower *= 2;
+			setAttackPower(getAttackPower() * 2);
 		}
 
 		//スーパークラスのattack() を実行
 		int damage = super.attack(monster);
 
 		//攻撃力を元に戻す
-		this.attackPower = attackPower;
+		setAttackPower(attackPower);
 		
 		return damage;
 	}

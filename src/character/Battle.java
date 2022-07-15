@@ -15,7 +15,7 @@ public class Battle {
 
 		//キャラクターの人数だけ攻撃
 		for (Character character : characters) {
-			System.out.println(character.name + "の攻撃！");
+			System.out.println(character.getName() + "の攻撃！");
 			character.attack(monster1);
 			System.out.println(monster1.isAlive());
 		}

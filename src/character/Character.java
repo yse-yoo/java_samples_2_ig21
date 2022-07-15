@@ -15,14 +15,78 @@ public class Character implements ICharacter{
 	}
 
 	//フィールド（プロパティ）
-	public String name;
-	public String job;
-	public int hp;
-	public int mp;
-	public int level;
-	public int exp;
-	public int attackPower;
-	public int defencePower;
+	private String name;
+	private String job;
+	private int hp;
+	private int mp;
+	private int level;
+	private int exp;
+	private int attackPower;
+	private int defencePower;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getJob() {
+		return job;
+	}
+
+	public void setJob(String job) {
+		this.job = job;
+	}
+
+	public int getHp() {
+		return hp;
+	}
+
+	public void setHp(int hp) {
+		this.hp = hp;
+	}
+
+	public int getMp() {
+		return mp;
+	}
+
+	public void setMp(int mp) {
+		this.mp = mp;
+	}
+
+	public int getLevel() {
+		return level;
+	}
+
+	public void setLevel(int level) {
+		this.level = level;
+	}
+
+	public int getExp() {
+		return exp;
+	}
+
+	public void setExp(int exp) {
+		this.exp = exp;
+	}
+
+	public int getAttackPower() {
+		return attackPower;
+	}
+
+	public void setAttackPower(int attackPower) {
+		this.attackPower = attackPower;
+	}
+
+	public int getDefencePower() {
+		return defencePower;
+	}
+
+	public void setDefencePower(int defencePower) {
+		this.defencePower = defencePower;
+	}
 
 	//インスタンスメソッド
 	@Override

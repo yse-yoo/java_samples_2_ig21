@@ -16,6 +16,5 @@ public class UserBean {
 		this.email = email;
 	}
 
-
 	
 }

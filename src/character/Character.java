@@ -55,7 +55,6 @@ public class Character extends CharacterAbstract {
 
 	@Override
 	public void magic(Monster monster, String key) {
-		// TODO 自動生成されたメソッド・スタブ
 		
 	}
 

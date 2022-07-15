@@ -3,7 +3,7 @@ package character;
 import monster.Monster;
 
 //スーパークラス
-public class Character {
+public class Character extends CharacterAbstract {
 	
 	//コンストラクタ
 	public Character(String name) {

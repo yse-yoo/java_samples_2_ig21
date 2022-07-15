@@ -24,6 +24,7 @@ public class Character extends CharacterAbstract {
 	public int defencePower;
 
 	//インスタンスメソッド
+	@Override
 	public int attack(Monster monster) {
 		int damage = this.attackPower - monster.defencePower;
 		if (damage > 0) monster.hp -= damage;
@@ -45,6 +46,11 @@ public class Character extends CharacterAbstract {
 		System.out.println("Attack: " + this.attackPower);
 		System.out.println("Defenece: " + this.defencePower);
 		System.out.println("--------");
+	}
+
+	@Override
+	public boolean isAlive() {
+		return (hp > 0);
 	}
 
 }

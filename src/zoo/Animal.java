@@ -1,7 +1,7 @@
 package zoo;
 
 //スーパークラス
-public class Animal {
+public class Animal implements IAnimal {
 	
 	public Animal(String name) {
 		super();
@@ -22,6 +22,11 @@ public class Animal {
 
 	public void escape() {
 		System.out.println(this.name + "が逃げた");
+	}
+
+	@Override
+	public void eat(String something) {
+		System.out.println(this.name + "が" + something + "を食べている");
 	}
 	
 }

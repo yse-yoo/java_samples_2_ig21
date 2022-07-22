@@ -7,11 +7,13 @@ public class App {
 		dog.walk();
 		dog.cry();
 		dog.actionCollective();
+		dog.eat("ホネ");
 		
 		Cat cat = new Cat("ミケ");
 		cat.walk();
 		cat.cry();
 		cat.actionSolo();
+		cat.eat("サカナ");
 		
 		Dog dog1 = new Dog("タロー");
 		Dog dog2 = new Dog("ジョン");

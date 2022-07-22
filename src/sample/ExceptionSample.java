@@ -1,5 +1,6 @@
 package sample;
 
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 
 public class ExceptionSample {
@@ -31,7 +32,11 @@ public class ExceptionSample {
 	 * @param path
 	 */
 	public static void loadFile(String path) {
-		FileReader reader = new FileReader(path);
+		try {
+			FileReader reader = new FileReader(path);
+		} catch (FileNotFoundException e) {
+			System.out.println("ファイルが読み込めませんでした");
+		}
 		
 	}
 	

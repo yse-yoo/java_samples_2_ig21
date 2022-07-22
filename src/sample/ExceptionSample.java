@@ -8,10 +8,14 @@ public class ExceptionSample {
 		average = calculateAverage(100, 5);
 		System.out.println(average);
 
+		average = calculateAverage(100, 0);
+		System.out.println(average);
 	}
 
 	public static float calculateAverage(int score, int count) {
 		float average = score / count;
 		return average;
 	}
+	
+	
 }

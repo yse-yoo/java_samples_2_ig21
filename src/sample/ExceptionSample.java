@@ -13,7 +13,13 @@ public class ExceptionSample {
 	}
 
 	public static float calculateAverage(int score, int count) {
-		float average = score / count;
+		float average = 0;
+		
+		if (count > 0) {
+			average = score / count;
+		} else {
+			System.out.println("個数が間違っています。");
+		}
 		return average;
 	}
 	

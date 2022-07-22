@@ -18,6 +18,12 @@ public class ExceptionSample {
 
 		// ファイル読み込み
 		loadFile("sample.txt");
+
+		try {
+			loadFile2("sample.txt");
+		} catch (IOException e) {
+			System.out.println("ファイルが読み込めませんでした");
+		}
 	}
 
 	public static float calculateAverage(int score, int count) {

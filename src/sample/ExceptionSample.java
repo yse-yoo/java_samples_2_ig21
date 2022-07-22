@@ -16,6 +16,9 @@ public class ExceptionSample {
 		average = calculateAverage(100, 0);
 		System.out.println(average);
 
+		average = calculateAverage(100, -1);
+		System.out.println(average);
+
 		// ファイル読み込み
 		loadFile("sample.txt");
 
@@ -28,6 +31,11 @@ public class ExceptionSample {
 
 	public static float calculateAverage(int score, int count) {
 		float average = 0;
+		
+		// 個数がマイナス		
+		if (count < 0) {
+			throw new IllegalArgumentException("個数がマイナスです");
+		}
 
 		if (count > 0) {
 			average = score / count;

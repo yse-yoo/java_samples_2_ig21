@@ -1,5 +1,6 @@
 package sample;
 
+import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 
@@ -37,6 +38,15 @@ public class ExceptionSample {
 	public static void loadFile(String path) {
 		try {
 			FileReader reader = new FileReader(path);
+			BufferedReader buffer = new BufferedReader(reader);
+			String line;
+			while ((line = buffer.readLine()) != null) {
+				System.out.println(line);
+			}
+			//バッファーを終了
+			buffer.close();
+			//ファイルを終了
+			reader.close();
 			System.out.println("ファイルを読み込みました");
 			
 		} catch (FileNotFoundException e1) {

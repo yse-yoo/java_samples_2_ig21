@@ -1,5 +1,7 @@
 package sample;
 
+import java.io.FileReader;
+
 public class ExceptionSample {
 
 	public static void main(String[] args) {
@@ -23,5 +25,14 @@ public class ExceptionSample {
 		return average;
 	}
 	
+	/**
+	 * ファイル読み込み
+	 * 
+	 * @param path
+	 */
+	public static void loadFile(String path) {
+		FileReader reader = new FileReader(path);
+		
+	}
 	
 }

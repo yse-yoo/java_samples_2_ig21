@@ -32,9 +32,13 @@ public class ExceptionSample {
 	public static float calculateAverage(int score, int count) {
 		float average = 0;
 		
-		// 個数がマイナス		
-		if (count < 0) {
-			throw new IllegalArgumentException("個数がマイナスです");
+		try {
+			// 個数がマイナス		
+			if (count < 0) {
+				throw new IllegalArgumentException("個数がマイナスです");
+			}
+		} catch (IllegalArgumentException e) {
+			System.out.println(e.getMessage());
 		}
 
 		if (count > 0) {

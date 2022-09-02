@@ -4,7 +4,7 @@ import item.Item;
 import monster.Monster;
 
 //スーパークラス
-public class Character implements ICharacter{
+public class Character implements ICharacter, INetwork {
 	
 	//コンストラクタ
 	public Character(String name) {
@@ -120,13 +120,25 @@ public class Character implements ICharacter{
 
 	@Override
 	public void magic(Monster monster, String key) {
-		
+		System.out.println(monster.name);
 	}
 
 	@Override
 	public void equip(Item item) {
 		this.attackPower += item.getAttackPower();
 		this.defencePower += item.getDefencePower();
+	}
+
+	@Override
+	public void connect() {
+		System.out.println("ネットワークに接続しました");
+		
+	}
+
+	@Override
+	public void save() {
+		this.connect();
+		System.out.println("データを保存しました");
 	}
 
 }

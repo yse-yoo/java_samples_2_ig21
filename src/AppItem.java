@@ -6,19 +6,19 @@ public class AppItem {
 
 	public static void main(String[] args) {
 		Drink drink1 = new Drink();
-		drink1.name = "コーヒー";
-		drink1.price = 350;
-		drink1.stock = 100;
+		drink1.setName("コーヒー");
+		drink1.setPrice(-350);
+		drink1.setStock(100);
 		
 		Drink drink2 = new Drink();
-		drink2.name = "紅茶";
-		drink2.price = 400;
-		drink2.stock = 10;
+		drink2.setName("紅茶");
+		drink2.setPrice(400);
+		drink2.setStock(10);
 
 		Drink drink3 = new Drink();
-		drink3.name = "ほうじ茶";
-		drink3.price = 300;
-		drink3.stock = 50;
+		drink3.setName("ほうじ茶");
+		drink3.setPrice(300);
+		drink3.setStock(50);
 		
 		ArrayList<Drink> drinkList = new ArrayList<>();
 		drinkList.add(drink1);
@@ -26,7 +26,8 @@ public class AppItem {
 		drinkList.add(drink3);
 		
 		for (Drink drink : drinkList) {
-			System.out.println(drink.name);
+			System.out.println(drink.getName());
+			System.out.println(drink.getPrice());
 		}
 	}
 }

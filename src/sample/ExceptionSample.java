@@ -20,11 +20,11 @@ public class ExceptionSample {
 		System.out.println(average);
 
 		// ファイル読み込み
-		loadFile("sample.txt");
+		loadFile("sample2.txt");
 
 		try {
 			loadFile2("sample.txt");
-		} catch (IOException e) {
+		} catch (Exception e) {
 			System.out.println("ファイルが読み込めませんでした");
 		}
 	}
@@ -54,8 +54,9 @@ public class ExceptionSample {
 	 * 
 	 * @param path
 	 * @throws IOException 
+	 * @throws IOException 
 	 */
-	public static void loadFile2(String path) throws IOException {
+	public static void loadFile2(String path) throws Exception {
 		FileReader reader = new FileReader(path);
 		BufferedReader buffer = new BufferedReader(reader);
 		String line;

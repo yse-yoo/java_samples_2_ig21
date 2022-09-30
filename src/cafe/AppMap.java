@@ -46,7 +46,13 @@ public class AppMap {
         foodMap.put("F0002", "Peach");
         foodMap.put("F0003", "Grape");
         
-        
+        String selectFood = foodMap.get("F0002");
+        System.out.println(selectFood);
+
+        System.out.println("---- values ----");
+        for (String foodName : foodMap.values()) {
+        	System.out.println(foodName);
+		}
 	}
 
 }

@@ -49,7 +49,8 @@ public class AppIterator {
 		Iterator<Integer> weekKeyIterator = weekdays.keySet().iterator();
 		while (weekKeyIterator.hasNext()) {
 			Integer key = weekKeyIterator.next();
-
+			String weekday = weekdays.get(key);
+			System.out.println(weekday);
 			if (key == 1 || key == 7) {
 				System.out.println("休み");
 			} else {

@@ -46,6 +46,16 @@ public class AppIterator {
 		weekdays.put(Calendar.FRIDAY, "金");
 		weekdays.put(Calendar.SATURDAY, "土");
 
+		Iterator<Integer> weekKeyIterator = weekdays.keySet().iterator();
+		while (weekKeyIterator.hasNext()) {
+			Integer key = weekKeyIterator.next();
+
+			if (key == 1 || key == 7) {
+				System.out.println("休み");
+			} else {
+				System.out.println("登校日");
+			}
+		}
 	}
 
 }

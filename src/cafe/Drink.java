@@ -11,5 +11,4 @@ public class Drink {
 		this.price = price;
 	}
 	
-	
 }

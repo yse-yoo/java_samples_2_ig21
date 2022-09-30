@@ -31,6 +31,15 @@ public class AppMap {
         int count = drinkMap.size();
         System.out.println(count);
 
+        System.out.println("---- remove ----");
+        drinkMap.remove("D0001");
+        count = drinkMap.size();
+        System.out.println(count);
+        
+        for (Drink drink : drinkMap.values()) {
+        	System.out.println(drink.name);
+		}
+
 	}
 
 }

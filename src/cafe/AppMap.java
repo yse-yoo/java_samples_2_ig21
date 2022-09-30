@@ -21,7 +21,12 @@ public class AppMap {
         	System.out.println(drink.name);
 		}
 
-
+        System.out.println("---- select drink ----");
+        Drink selectDrink = drinkMap.get("D0001");
+        System.out.println(selectDrink.name);
+        System.out.println(selectDrink.price);
+        
+        
 	}
 
 }

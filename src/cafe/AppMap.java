@@ -11,6 +11,9 @@ public class AppMap {
         drinkMap.put("D0002", new Drink("紅茶", 400));
         drinkMap.put("D0003", new Drink("ほうじ茶", 300));
         
+        for (String key : drinkMap.keySet()) {
+        	System.out.println(key);
+		}
         
 	}
 

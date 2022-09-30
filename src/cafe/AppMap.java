@@ -40,6 +40,13 @@ public class AppMap {
         	System.out.println(drink.name);
 		}
 
+        System.out.println("---- foodMap ----");
+        Map<String, String> foodMap = new HashMap<>();
+        foodMap.put("F0001", "Apple");
+        foodMap.put("F0002", "Peach");
+        foodMap.put("F0003", "Grape");
+        
+        
 	}
 
 }

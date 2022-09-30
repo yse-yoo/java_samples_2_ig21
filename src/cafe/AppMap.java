@@ -26,7 +26,11 @@ public class AppMap {
         System.out.println(selectDrink.name);
         System.out.println(selectDrink.price);
         
-        
+
+        System.out.println("---- count ----");
+        int count = drinkMap.size();
+        System.out.println(count);
+
 	}
 
 }

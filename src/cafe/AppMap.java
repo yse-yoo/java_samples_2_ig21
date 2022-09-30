@@ -53,6 +53,18 @@ public class AppMap {
         for (String foodName : foodMap.values()) {
         	System.out.println(foodName);
 		}
+        
+        System.out.println("---- city map ----");
+        Map<Integer, String> cityMap = new HashMap<>();
+//        Map<Integer, String> cityMap = new LinkedHashMap<>();
+//        Map<Integer, String> cityMap = new TreeMap<>();
+        cityMap.put(13, "東京");
+        cityMap.put(27, "大阪");
+        cityMap.put(14, "神奈川");
+        
+        for (Integer key : cityMap.keySet()) {
+        	System.out.println(key);
+		}
 	}
 
 }

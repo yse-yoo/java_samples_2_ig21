@@ -97,6 +97,16 @@ public class AppIterator {
             String key = (String) keyCityIterator.next();
             System.out.println(key);
         }
+
+        // 問題3
+        System.out.println("--- Q3 ---");
+        Map<Integer, Score> scoreMap = new HashMap<>();
+        scoreMap.put(1, new Score("A", 67));
+        scoreMap.put(2, new Score("B", 91));
+        scoreMap.put(3, new Score("C", 55));
+        scoreMap.put(4, new Score("D", 83));
+        scoreMap.put(5, new Score("E", 74));
+        
     }
 
 }

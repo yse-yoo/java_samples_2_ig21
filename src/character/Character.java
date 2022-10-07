@@ -152,7 +152,13 @@ public class Character implements ICharacter, INetwork {
 
     @Override
     public void magic(Character character, Magic magic) {
-        
+        if (magic.type == MagicType.DEFENCE) {
+            character.defencePower += magic.value;
+        } else if (magic.type == MagicType.HEAL) {
+            character.hp += magic.value;
+        } else {
+            System.out.println("その魔法は使えません");
+        }
     }
 
 }

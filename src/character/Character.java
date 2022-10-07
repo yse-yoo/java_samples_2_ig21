@@ -143,13 +143,15 @@ public class Character implements ICharacter, INetwork {
 
     @Override
     public void magic(Monster monster, Magic magic) {
-        // TODO 自動生成されたメソッド・スタブ
-        
+        if (magic.type == MagicType.ATTACK) {
+            monster.hp -= magic.value;
+        } else {
+            System.out.println("その魔法は使えません");
+        }
     }
 
     @Override
     public void magic(Character character, Magic magic) {
-        // TODO 自動生成されたメソッド・スタブ
         
     }
 

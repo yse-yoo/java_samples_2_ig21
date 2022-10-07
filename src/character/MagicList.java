@@ -13,4 +13,9 @@ public class MagicList {
         map.put("protect", new Magic(MagicType.DEFENCE, "プロテス", 3));
         map.put("heal", new Magic(MagicType.HEAL, "ヒール", 5));
     }
+    
+    public Magic get(String key) {
+        return map.get(key);
+    }
+
 }

@@ -10,4 +10,7 @@ public interface ICharacter {
 	public void magic(Monster monster, String key);
 	public void equip(Item item);
 
+	public void magic(Monster monster, Magic magic);
+	public void magic(Character character, Magic magic);
+
 }

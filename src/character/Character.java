@@ -141,4 +141,16 @@ public class Character implements ICharacter, INetwork {
 		System.out.println("データを保存しました");
 	}
 
+    @Override
+    public void magic(Monster monster, Magic magic) {
+        // TODO 自動生成されたメソッド・スタブ
+        
+    }
+
+    @Override
+    public void magic(Character character, Magic magic) {
+        // TODO 自動生成されたメソッド・スタブ
+        
+    }
+
 }

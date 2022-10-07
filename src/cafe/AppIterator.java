@@ -81,7 +81,22 @@ public class AppIterator {
         }
         System.out.println(sum);
 
-        // 問題1
+        // 問題2
+        System.out.println("--- Q2 ---");
+        Map<String, String> cityMap = new HashMap<>();
+        cityMap.put("tokyo", "東京");
+        cityMap.put("osaka", "大阪");
+        cityMap.put("yokohama", "横浜");
+        
+        for (String key : cityMap.keySet()) {
+           System.out.println(key); 
+        }
+
+        Iterator<String> keyCityIterator = cityMap.keySet().iterator();
+        while (keyCityIterator.hasNext()) {
+            String key = (String) keyCityIterator.next();
+            System.out.println(key);
+        }
     }
 
 }

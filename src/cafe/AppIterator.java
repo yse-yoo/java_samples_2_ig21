@@ -107,6 +107,15 @@ public class AppIterator {
         scoreMap.put(4, new Score("D", 83));
         scoreMap.put(5, new Score("E", 74));
         
+        Iterator<Score> scoreMapIterator = scoreMap.values().iterator();
+        while (scoreMapIterator.hasNext()) {
+            Score score = scoreMapIterator.next();
+            System.out.println(score.name + ":" + score.value);
+        }
+        
+        for (Score score : scoreMap.values()) {
+            System.out.println(score.name + ":" + score.value);
+        }
     }
 
 }

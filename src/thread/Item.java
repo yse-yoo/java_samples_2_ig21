@@ -15,6 +15,6 @@ public class Item {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.err.println("---注文完了---");
+        System.out.println("---注文完了---");
     }
 }

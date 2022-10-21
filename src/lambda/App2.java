@@ -7,10 +7,9 @@ public class App2 {
     public static void main(String[] args) {
 
         ICalculate calculate = new ICalculate() {
-            
             @Override
             public Integer totalPrice(Integer price) {
-                Float totalPrice = price * TAX_RATE;
+                Float totalPrice = price * (1 + TAX_RATE);
                 return totalPrice.intValue();
             }
         };

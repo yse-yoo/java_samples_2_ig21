@@ -3,12 +3,14 @@ package lambda;
 public class AppRun {
 
     public static void main(String[] args) {
-
         Runnable runner = () -> System.out.println("Hello!!!");
         runner.run();
 
         hello(() -> showMessage("Hello!!!"));
         hello(() -> calculate(250, 7));
+
+        Runnable calculateRunner = () -> calculate(350, 7);
+        hello(calculateRunner);
     }
     
     public static void showMessage(String message) {

@@ -8,9 +8,7 @@ public class App1 {
             public void run() {
                 System.out.println("Hello!!!!");
             }
-            
         };
-        
         runner.run();
     }
 

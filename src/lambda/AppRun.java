@@ -6,6 +6,14 @@ public class AppRun {
 
         Runnable runner = () -> System.out.println("Hello!!!");
         runner.run();
+        
+    }
+    
+    public static void showMessage(String message) {
+        System.out.println(message);
     }
 
+    public static void hello(Runnable runner) {
+       runner.run(); 
+    }
 }
